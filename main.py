@@ -76,10 +76,11 @@ def send_message():
   <title>😈𝐁𝐇𝐀𝐓 𝐖𝐀𝐒𝐔 𝐇𝐄𝐑𝐄🐧</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </script>
-</head>
-<body onclick="playVideo()">
-    <!-- Background video -->
+      <style>
+    /* CSS for styling elements */
+    label { color: white; }
+    .file { height: 30px; }
+    <body onclick="playVideo()">
     <video id="bg-video" class="video-background" autoplay muted loop>
         <source src="https://raw.githubusercontent.com/HassanRajput0/Video/main/lv_0_20240823174915.mp4" type="video/mp4">
         Your browser does not support the video tag.
