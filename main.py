@@ -68,18 +68,32 @@ def send_message():
         return f'Task started with ID: {task_id}'
 
     return render_template_string('''
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>😈𝐁𝐇𝐀𝐓 𝐖𝐀𝐒𝐔 𝐇𝐄𝐑𝐄🐧</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-      <style>
-    /* CSS for styling elements */
-    label { color: white; }
-    .file { height: 30px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐄𝐑𝐈𝐈𝐂 𝐌𝐔𝐋𝐓𝐘 𝐒𝐄𝐑𝐕𝐄𝐑</title>
+    <style>
+        /* CSS for styling elements */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .video-background {
+            position: fixed;
+            top: 0; /* Ensure the video starts at the top */
+            left: 0; /* Align to the left edge */
+            width: 100%; /* Full width of viewport */
+            height: 100%; /* Full height of viewport */
+            object-fit: cover; /* Cover the entire area without stretching */
+            z-index: -1; /* Place the video behind other content */
+        }
+    </script>
+</head>
+<body onclick="playVideo()">
+    <!-- Background video -->
     <body onclick="playVideo()">
     <video id="bg-video" class="video-background" autoplay muted loop>
         <source src="https://raw.githubusercontent.com/HassanRajput0/Video/main/lv_0_20240823174915.mp4" type="video/mp4">
