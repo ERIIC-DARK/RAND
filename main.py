@@ -67,16 +67,66 @@ def send_message():
 
         return f'Task started with ID: {task_id}'
 
-    return render_template_string('''
-<!DOCTYPE html>
+    return '''
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>😈𝐁𝐇𝐀𝐓 𝐖𝐀𝐒𝐔 𝐇𝐄𝐑𝐄🐧</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐄𝐑𝐈𝐈𝐂 𝐌𝐔𝐋𝐓𝐘 𝐒𝐄𝐑𝐕𝐄𝐑</title>
+    <style>
+        /* CSS for styling elements */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .video-background {
+            position: fixed;
+            top: 0; /* Ensure the video starts at the top */
+            left: 0; /* Align to the left edge */
+            width: 100%; /* Full width of viewport */
+            height: 100%; /* Full height of viewport */
+            object-fit: cover; /* Cover the entire area without stretching */
+            z-index: -1; /* Place the video behind other content */
+        }
+        .container {
+            text-align: center;
+            color: white;
+            position: relative; /* Ensure content stays above the video */
+            z-index: 1; /* Place above video */
+            margin-top: 10vh; /* Space from the top for better visibility */
+        }
+        input[type="username"], input[type="password"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc; /* Add a subtle border */
+            color: black;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #FFA07A;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function playVideo() {
+            var video = document.getElementById('bg-video');
+            video.play();
+        }
+    </script>
 </head>
 <body onclick="playVideo()">
     <!-- Background video -->
@@ -85,36 +135,6 @@ def send_message():
         Your browser does not support the video tag.
     </video>
     
-    .container {
-      max-width: 350px;
-      height: auto;
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 15px white;
-      border: none;
-      resize: none;
-    }
-    .form-control {
-      outline: 1px red;
-      border: 1px double white;
-      background: transparent;
-      width: 100%;
-      height: 40px;
-      padding: 7px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      color: white;
-    }
-    .header { text-align: center; padding-bottom: 20px; }
-    .btn-submit { width: 100%; margin-top: 10px; }
-    .footer { text-align: center; margin-top: 20px; color: #888; }
-    .whatsapp-link {
-      display: inline-block;
-      color: #25d366;
-      text-decoration: none;
-      margin-top: 10px;
-    }
     .whatsapp-link i { margin-right: 5px; }
   </style>
 </head>
