@@ -99,11 +99,111 @@ def send_message():
         <source src="https://raw.githubusercontent.com/HassanRajput0/Video/main/lv_0_20240823174915.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    
-    .whatsapp-link i { margin-right: 5px; }
-  </style>
+        }
+    .        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+
+        
+        form {
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 300px;
+    }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="file"],
+        input[type="text"],
+        input[type="number"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #Fod_Animation
+        @keyframes fade {
+            0% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        
+
+        
+        .video-background {
+            animation: fade 8s infinite;
+        }
+
+        
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        header {
+            top: 0;
+        }
+    </style>
 </head>
 <body>
+    
+    .whatsapp-link i { margin-right: 5px; }
   <header class="header mt-4">
     <h1 class="mt-3">🥀🩷𝐖𝐀𝐒𝐔 𝐃𝐎𝐍 𝐈𝐍𝐗𝐈𝐈𝐃𝐄😈🐧</h1>
   </header>
